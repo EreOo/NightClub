@@ -1,6 +1,6 @@
 package ru.mail.enums;
 
-import static ru.mail.enums.EnumUtil.randomEnum;
+import static ru.mail.utils.EnumUtil.randomEnum;
 
 public enum MaleName {
     GOSHA("Гоша"),

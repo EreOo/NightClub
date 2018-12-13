@@ -1,4 +1,4 @@
-package ru.mail.enums;
+package ru.mail.utils;
 
 import java.util.Random;
 

@@ -1,9 +1,10 @@
-package ru.mail;
+package ru.mail.helpers;
 
 import ru.mail.enums.FemaleName;
 import ru.mail.enums.Gender;
 import ru.mail.enums.MaleName;
 import ru.mail.enums.Music;
+import ru.mail.models.Guest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.Random;
 public class GuestRandomiser {
     private List guests = new ArrayList<Guest>();
 
-    public List<Guest> getRandomPeople() {
+    public List getRandomPeople() {
         for (int i = 0; i <= getRandomCount(); i++) {
             Gender gender = Gender.getRandom();
             String name;

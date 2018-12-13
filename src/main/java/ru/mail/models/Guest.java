@@ -1,4 +1,4 @@
-package ru.mail;
+package ru.mail.models;
 
 import ru.mail.enums.Gender;
 import ru.mail.enums.Music;
@@ -17,8 +17,22 @@ public class Guest {
         this.loveMusic = loveMusic;
     }
 
-    public void dance() {
+    private String dance() {
+        System.out.println(name + " танцует под " + loveMusic.getValue() + "＼(≧▽≦)／");
+        return "танцует";
+    }
 
+    private String drink() {
+        System.out.println(name + " пьет водку на баре ┐( ˘_˘ )┌");
+        return "пьет";
+    }
+
+    public String listenMusic(Music music) {
+        if (music.equals(loveMusic)) {
+            return dance();
+        } else {
+            return drink();
+        }
     }
 
     public String getName() {
@@ -31,10 +45,5 @@ public class Guest {
 
     public Music getLoveMusic() {
         return loveMusic;
-    }
-
-    public void drink() {
-
-
     }
 }
