@@ -11,6 +11,7 @@ import java.util.Arrays;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Тесты для проверки работоспособности диджея и гостей.
  */
 public class PartyTest {
 

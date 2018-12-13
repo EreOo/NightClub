@@ -12,10 +12,11 @@ import java.util.List;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Тесты для проверки рандомайзера.
  */
 public class GuestRandomiserTest {
 
-    @Test()
+    @Test
     public void checkSize() {
         Assert.assertTrue(getRandomPeople().size() > 0);
     }

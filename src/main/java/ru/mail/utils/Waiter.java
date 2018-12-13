@@ -4,6 +4,7 @@ import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Ждет заданное количество МИЛЛИСЕКУНД.
  */
 public class Waiter {
 

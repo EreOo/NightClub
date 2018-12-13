@@ -12,11 +12,14 @@ import java.util.Random;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Класс создает список рандомных гостей.
+ * Количество от 1 до MAX_GUESTS включительно (сейчас 10 человек).
  */
 public class GuestRandomiser {
+    private static final int MAX_GUESTS = 10;
     private List guests = new ArrayList<Guest>();
 
-    public List getRandomPeople() {
+    public List<Guest> getRandomPeople() {
         for (int i = 0; i <= getRandomCount(); i++) {
             Gender gender = Gender.getRandom();
             String name;
@@ -26,13 +29,12 @@ public class GuestRandomiser {
             } else {
                 name = FemaleName.getRandom().getValue();
             }
-
             guests.add(new Guest(name, gender, Music.getRandom()));
         }
         return guests;
     }
 
     private int getRandomCount() {
-        return new Random().nextInt(10);
+        return new Random().nextInt(MAX_GUESTS);
     }
 }

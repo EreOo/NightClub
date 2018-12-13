@@ -10,15 +10,26 @@ import static ru.mail.utils.Waiter.customWait;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Пора устроить вечеринку!
+ * Вечеринка не может быть вечной, ограничение в количестве сетов диджея.
+ * Между сетами есть паузы (таймауты).
  */
 public class Party {
+    private static final int DJ_SET_COUNT = 7;
+    private static final int TIMEOUT = 5000;
 
+    /**
+     * Метод эмулирует вечеринку.
+     *
+     * @param dj     пригласите диджея.
+     * @param guests позовите гостей.
+     */
     public void letsGo(Dj dj, List<Guest> guests) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < DJ_SET_COUNT; i++) {
             Music music = dj.playMusic();
             guests.forEach(guest -> guest.listenMusic(music));
             System.out.println("---------------------------------------");
-            customWait(5000);
+            customWait(TIMEOUT);
         }
     }
 }

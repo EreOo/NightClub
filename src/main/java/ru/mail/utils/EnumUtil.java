@@ -4,6 +4,7 @@ import java.util.Random;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Возвращает рандомное значение ЛЮБОГО энума.
  */
 public class EnumUtil {
 

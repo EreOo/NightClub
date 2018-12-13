@@ -6,6 +6,7 @@ import ru.mail.models.Dj;
 
 /**
  * Created Vladimir Shekhavtsov.
+ * Время открыть клуб!
  */
 public class NightClub {
 
